@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.flexcontainer {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    display: flex;
+    flex-flow: row wrap;
+    border: 5px solid black;
+    width: 650px;
+    height: 650px;
+    justify-content: space-around;
+}
+
+#grid div {
+    box-sizing: border-box;
+    border:2px solid black;
+}
+
