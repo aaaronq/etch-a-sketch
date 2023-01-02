@@ -35,7 +35,7 @@ function createDiv(size) {
 }
 
 function createGrid(size) {
-    if (grid.children.length > 0) deleteGrid();
+    grid.innerHTML = "";
     for (let i = 0; i < size * size; i++) {
         grid.appendChild(createDiv(grid.clientWidth / size));  
     }
@@ -56,14 +56,6 @@ function addHover(color) {
                 else div.style.backgroundColor = color;
         });
     });
-}
-
-function deleteGrid() {
-    let length = grid.children.length;
-    if (length === 0) return;
-    for (let i = 0; i < length; i++) {
-        grid.children[0].remove();
-    }
 }
 
 // Create grid for first time
