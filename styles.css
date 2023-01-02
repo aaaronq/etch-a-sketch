@@ -38,12 +38,13 @@ html, body {
     align-items: center;
 }
 
-#flex-1 button {
+button {
     box-sizing: border-box;
     width: 200px;
     font-size: 35px;
     border-radius: 5px;
     background-color: lightgreen;   
+    font-family: inherit;
 }
 
 .inputContainer {
@@ -113,3 +114,12 @@ p {
     justify-content: space-around;
     align-items: center;
 }
+
+.button:hover, .inputContainer:hover {
+    box-shadow: 2px  1px;
+}
+
+.button:active {
+    background-color: blueviolet;
+}
+
