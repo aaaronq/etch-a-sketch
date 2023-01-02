@@ -94,15 +94,16 @@ p {
     background-color: #e7f7ff;
 }
 
-#continuous {
+#continuous, #custom {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 30px;
     gap: 5px;
+    padding: 4px;   
 }
 
 #continuous input {
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
 }
