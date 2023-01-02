@@ -10,9 +10,31 @@
 </head>
 <body>
     <div class="container">
+        <div class="header">
+            <h1> Etch-a-Sketch!</h1>
+        </div>
         <div class="flexcontainer">
-            <div id="grid">
+            <div id="flex-1">
+                <button id="rainbow"> Rainbow</button>
+                <button id="eraser"> Eraser </button>
+                <button id="clear"> Clear </button>
+                <div class="inputContainer">
+                    Custom
+                    <input id="colorPicker" type="color" value="#333333" />
+                </div>
+                <div class="inputContainer" id="continuous">
+                    <p>Continuous</p>
+                    <input type="checkbox" id="checkbox" checked>
+                </div>
+                <div class="inputContainer" id="slidercontainer">
+                    <input type="range" min="2" max="32" value="8" id="slider">
+                    <p id="slideroutput"> 8x8 </p>
+                </div>
+            </div>
+            <div id="flex-2">
+                <div id="grid">
 
+                </div>
             </div>
         </div>
     </div>

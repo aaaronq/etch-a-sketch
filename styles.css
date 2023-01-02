@@ -1,19 +1,24 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .flexcontainer {
     display: flex;
-    height: 100vh;
+    height: 88vh;
     justify-content: center;
     align-items: center;
+    gap: 100px;
+    
 }
 
 #grid {
     display: flex;
     flex-flow: row wrap;
-    border: 5px solid black;
+    border: 35px solid salmon;
+    border-radius: 12.5px;
+    box-shadow: 15px 10px;
     width: 650px;
     height: 650px;
     justify-content: space-around;
@@ -22,5 +27,82 @@ html, body {
 #grid div {
     box-sizing: border-box;
     border:2px solid black;
+    border-radius: 1px;
 }
 
+#flex-1 {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#flex-1 button {
+    box-sizing: border-box;
+    width: 200px;
+    font-size: 35px;
+    border-radius: 5px;
+    background-color: lightgreen;   
+}
+
+.inputContainer {
+    box-sizing: border-box;
+    font-size: 30px;
+    width: 200px;
+    height: 51px;
+    padding: 1px 6px;
+    padding-top: 5px;
+    background-color: lightgreen;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#colorPicker {
+    height: 35px;
+    padding: 0;
+}
+
+#slidercontainer {
+    height: 90px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 12vh;
+    background-color: gold;
+    margin-top: 0px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 70px;
+    padding: 15px;
+    margin: 0;
+}
+
+.container {
+    background-color: #e7f7ff;
+}
+
+#continuous {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 5px;
+}
+
+#continuous input {
+    width: 25px;
+    height: 25px;
+}
